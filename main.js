@@ -6,8 +6,8 @@ do{
 } while (!(choice=="pari") && !(choice=="dispari"));
 
 do{
-    n = prompt("Inserisci un numero da 1 a 5")
-} while (n>5);
+    n = prompt("Inserisci un numero da 1 a 5");
+} while (isNaN(n) || (n>5) || (n<1));
 n += randomNumber();;
 if (choice === isEven(n)){
     alert ("Hai Vinto! :D");

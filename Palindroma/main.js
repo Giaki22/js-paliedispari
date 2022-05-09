@@ -2,9 +2,13 @@ let s = 0;
 do {
     s = prompt("Inserisci una parola/stringa");
 } while(!(isNaN(s)));
-
 let r = isPalindrome(s);
-
+if (r === true){
+    alert (`La parola/stringa ${s} è palindroma.`);
+} else {
+    alert (`La parola/stringa ${s} non è palindroma.`);
+};
+/* FUNCTIONS */
 function isPalindrome(string){
     for (let i=0; i<string.length - 1; i++){
         if (string[i]!==(string[string.length - 1 - i])){
@@ -12,9 +16,4 @@ function isPalindrome(string){
         }
         return true;
     };
-};
-if (r === true){
-    alert (`La parola/stringa ${s} è palindroma.`);
-} else {
-    alert (`La parola/stringa ${s} non è palindroma.`);
 };

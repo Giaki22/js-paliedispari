@@ -8,10 +8,8 @@ do{
 do{
     n = prompt("Inserisci un numero da 1 a 5")
 } while (n>5);
-let cn = randomNumber();
-n += cn;
-let r = isEven(n);
-if (choice === r){
+n += randomNumber();;
+if (choice === isEven(n)){
     alert ("Hai Vinto! :D");
 } else {
     alert ("Hai Perso! D:");

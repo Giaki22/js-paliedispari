@@ -3,7 +3,7 @@ let n = 0;
 do{
     choice = prompt("Pari o Dispari?");
     choice = choice.toLowerCase();
-} while (!(choice=="pari") || (choice=="dispari"));
+} while (!(choice=="pari") && !(choice=="dispari"));
 
 do{
     n = prompt("Inserisci un numero da 1 a 5")
